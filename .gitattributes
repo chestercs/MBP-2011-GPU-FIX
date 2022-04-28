@@ -1,0 +1,23 @@
+# # Set the default behavior, in case people don't have core.autocrlf set.
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# These files should have specific line endings
+*.sh	text eol=lf
+*.bat	text eol=crlf
+
+# # Denote all files that are truly binary and should not be modified.
+*.png binary
+*.gif binary
+*.jpeg binary
+*.jpg binary
+*.ttf binary
+
+# Enforce Unix newlines
+*.css   text eol=lf
+*.html  text eol=lf
+*.js    text eol=lf
+*.json  text eol=lf
+*.less  text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
