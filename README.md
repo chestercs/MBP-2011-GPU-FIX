@@ -1,5 +1,5 @@
 # MBP-2011-GPU-FIX
-MacBook Pro 2011 Dedicated GPU Failure, Software fix
+> MacBook Pro 2011 Dedicated GPU Failure, Software fix
 
 
 
@@ -61,6 +61,7 @@ After its booted, open terminal (Utilities/Terminal)
 Then Run 
 
     csrutil enable
+    nvram -d recovery-boot-mode
     reboot
     
 Or you can run /gpu_fix_4_csrutil_enable.sh
@@ -69,3 +70,10 @@ Or you can run /gpu_fix_4_csrutil_enable.sh
     chmod 755 ./gpu_fix_4_csrutil_enable.sh
     ./gpu_fix_4_csrutil_enable.sh
 
+#### Probably useful links:
+
+ - Idea came from: https://forums.macrumors.com/threads/force-2011-macbook-pro-8-2-with-failed-amd-gpu-to-always-use-intel-integrated-gpu-efi-variable-fix.2037591/page-57#post-25751208
+ - Entering recovery mode: https://apple.stackexchange.com/questions/332587/single-user-recovery-mode-on-high-sierra-10-13-6
+ - Reseting NVRAM: https://support.apple.com/en-us/HT204063
+ - Disabling with chip flashing: https://www.youtube.com/watch?v=n6ROPL2-5HA
+ - Reflowing (lol): https://www.youtube.com/watch?v=slF_4yKUW0s
