@@ -1,11 +1,12 @@
 #!/bin/bash
 
-echo "System Files protection status:"
+echo "System Integrity protection status:"
 csrutil status
 echo ""
 sleep 1
 
 echo "Removing dedicated GPU kext..."
+mkdir -p /System/Library/Extensions-off
 mv System/Library/Extensions/AMDRadeonX3000.kext/ System/Library/Extensions-off/AMDRadeonX3000.kext/
 echo ""
 

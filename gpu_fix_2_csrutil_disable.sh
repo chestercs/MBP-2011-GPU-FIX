@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "System Files protection status:"
+echo "System Integrity protection status:"
 csrutil status
 echo ""
 
-echo "Disabling system protection..."
+echo "Disabling System Integrity protection..."
 csrutil disable
 csrutil status
 echo ""

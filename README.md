@@ -23,7 +23,7 @@ Or you can run /gpu_fix_1_nvram_temp_fix_and_recovery_mode.sh
     ./gpu_fix_1_nvram_temp_fix_and_recovery_mode.sh
 
 
-### Step2: Recovery mode, Disable csrutil (File system protection)
+### Step2: Recovery mode, Disable csrutil (System Integrity protection)
 After its booted, open terminal (Utilities/Terminal)
 Then Run 
 
@@ -45,6 +45,7 @@ Then Run
     csrutil status
 csrutil status should be disabled state
 
+    mkdir -p /System/Library/Extensions-off
     mv System/Library/Extensions/AMDRadeonX3000.kext/ System/Library/Extensions-off/AMDRadeonX3000.kext/
     nvram "recovery-boot-mode=unused"
     reboot
@@ -56,7 +57,7 @@ Or you can run /gpu_fix_3_remove_gpu_kext.sh
     ./gpu_fix_3_remove_gpu_kext.sh
 
 
-### Step4: Recovery mode, Enable csrutil (File system protection)
+### Step4: Recovery mode, Enable csrutil (System Integrity protection)
 After its booted, open terminal (Utilities/Terminal)
 Then Run 
 
